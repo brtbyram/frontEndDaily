@@ -200,7 +200,7 @@ main .sidebar .widget-stats{
 }
 main .sidebar .widget-stats .cover{
     height: 43px;
-    background: url(tw2.jpg) no-repeat center center;
+    background: url(../images/tw2.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 4px;
 }
