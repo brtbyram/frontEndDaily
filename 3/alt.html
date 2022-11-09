@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="page">
+            <div class="back">
+                <a href="#" class="back-btn">
+                    <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                    Your Cards
+                </a>
+                <a href="#" class="more-btn">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card bg-dark">
+                            <div class="bank-name">HDFC BANK</div>
+                            <img src="img/chip.png" alt="">
+                            <div class="card-information">
+                                <div>
+                                    <span>****</span><span>5432</span>
+                                </div>
+                                <img src="img/mastercard.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-blue">
+                            <div class="bank-name">SBI BANK</div>
+                            <img src="img/chip.png" alt="">
+                            <div class="card-information">
+                                <div>
+                                    <span>****</span><span>1245</span>
+                                </div>
+                                <img src="img/mastercard.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card bg-blue">
+                            <div class="bank-name">SBI BANK</div>
+                            <img src="img/chip.png" alt="">
+                            <div class="card-information">
+                                <div>
+                                    <span>****</span><span>1245</span>
+                                </div>
+                                <img src="img/mastercard.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <h6>Send Money to</h6>
+            <div class="peoples">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="img/palaa.jpg" alt="">
+                            </div>
+                            <div class="name">muro</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="img/palaa.jpg" alt="">
+                            </div>
+                            <div class="name">muro</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="img/palaa.jpg" alt="">
+                            </div>
+                            <div class="name">muro</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="img/palaa.jpg" alt="">
+                            </div>
+                            <div class="name">muro</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="img/palaa.jpg" alt="">
+                            </div>
+                            <div class="name">muro</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="img/palaa.jpg" alt="">
+                            </div>
+                            <div class="name">muro</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h6>Card Setting</h6>
+
+            <nav class="settings-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-lock"></i>
+                            Change Pincode
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-ban"></i>
+                            Block cards
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-download"></i>
+                            Download Statment
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css">
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+</body>
+
+</html>

@@ -11,6 +11,8 @@
     font-family: 'roboto', sans-serif;
 }
 
+
+
 :root{
     --color: #006699;
 }
@@ -173,6 +175,48 @@ main .sidebar .widget{
     border-radius: 6px;
     padding: 15px;
 }
+main .sidebar .widget .widget-button{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color);
+    transition: 300ms background-color, 300ms color;
+}
+main .sidebar .widget .widget-button:hover{
+    background-color: var(--color);
+    color: #aaa;
+}
+main .sidebar .widget h6{
+    font-size: 14px;
+    font-weight: 500;
+    color: #17272f;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #edf0f5;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .sidebar .widget h6 .description{
+    display: block;
+    font-size: 10px;
+    color: #aaa;
+    font-weight: normal;
+    margin-top: 4px;
+}
+main .sidebar .widget h6 .description .more-btn{
+    color:#aaa ;
+    font-size: 16px;
+    align-self: flex-start;
+}
+main .sidebar .widget h6 .description .more-btn:hover{
+    color: var(--color);
+}
 main .sidebar .widget-stats{
     padding: 8px;
 }
@@ -304,9 +348,99 @@ main .sidebar .widget-stats .avatar img{
 }
 
 
+.widget-recommendation ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.widget-recommendation ul li a:first-child{
+    display: flex;
+    align-items: center;
+}
+.widget-recommendation ul li a:first-child .image{
+    min-width: 24px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widget-recommendation ul li a:first-child .image img{
+    max-width: 100%;
+}
+.widget-recommendation ul li a:first-child .detail{
+    display: flex;
+    flex-direction: column;
+}
+.widget-recommendation ul li a:first-child .detail .name{
+    font-size: 14px;
+    color: #17272f;
+    font-weight: 500;
+}
+.widget-recommendation ul li a:first-child .detail .alt-name{
+    color: #aaa;
+    font-size: 12px;
+    padding-top: 3px;
+}
+.widget-recommendation ul li a:last-child{
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--color);
+    color: var(--color);
+    border-radius: 4px;
+    font-size: 13px;
+    display: grid;
+    place-items: center;
+    transition: 300ms background, 300ms color;
+}
+.widget-recommendation ul li a:last-child:hover{
+    background-color: var(--color);
+    color: #aaa;
+}
 
 
 
+.widget-marketing{
+    padding: 20px 16px 10px;
+}
+.widget-marketing .get-updates .avatars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 30px 0;
+}
+.widget-marketing .get-updates .avatars a img{
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}
+.widget-marketing .get-updates p{
+    margin-top: 18px;
+    font-size: 14px;
+    color: #17272f;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.widget-marketing .get-updates p span{
+    font-weight: 500;
+}
+
+.footer{
+    padding-top: 38px;
+}
+.footer nav{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 16px;
+}
+.footer nav a{
+    font-size: 10px;
+    color: #aaa;
+    margin-right: 15pxpx;
+    margin-bottom: 16px;
+}
 
 
 main .content{
